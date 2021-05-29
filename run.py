@@ -49,9 +49,15 @@ while True:
             else:
                 print("Login successfull")
                 print("\n")
+                print("Vew your details here:" 'http://angular.io')
                 print(f"{username}")
                 print(f"{password}")
                 break
+
+    else:
+        print("\n")
+        print("I DID NOT RECOGNIZED YOUR INPUT!!!")
+
 
 
 
