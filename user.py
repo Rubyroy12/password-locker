@@ -22,6 +22,12 @@ class Credentials:
     create a class that create instance of the class
 
     """
+    credentials_list = []
+
+    def __init__(self,password):
+        self.password = password
     
+    
+
 
 
