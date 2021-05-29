@@ -26,8 +26,12 @@ class Credentials:
 
     def __init__(self,password):
         self.password = password
+
+    def save_user_password(self):
+        """method to save the  use password"""
+        Credentials.credentials_list.append(self)
     
-    
+
 
 
 
