@@ -32,6 +32,7 @@ while True:
         
         else:
             print("You have successfully created password locker account")
+            print("\t\t\t"+'________________'+ "\t\t\t")
             print('\n')
             print("***LOGIN***")
             print('\n')
@@ -50,25 +51,37 @@ while True:
                 print("Login successfull")
                 print("\n")
                 print("Vew your details here:" 'http://angular.io')
-                print(f"{username}")
-                print(f"{password}")
-                break
+                print(f"***{username}***")
+                print(f"***{password}***")
+    
+    elif option =='login':
+
+        print("Welcome : LOGIN ")
+        print('\n')
+
+        print('Enter your username:')
+        default_username = input()
+
+        print('Enter Password:')
+        default_pasword = input()
+
+        print('\n')
+        print('You have successfully logged in')
+        print("\t\t"+'________________'+ "\t\t")
+
+        while default_username != username or default_pasword != pasword:
+            print('Invalid credentials')
+            print('Please try again')
+
+
+
+
 
     else:
         print("\n")
         print("I DID NOT RECOGNIZED YOUR INPUT!!!")
-
-
-
-
-
-    
-
-    
-
-
-
-
+        break
+ 
 
 if __name__ == '__main__':
     main()
