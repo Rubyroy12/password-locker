@@ -83,7 +83,7 @@ while True:
         print('You have successfully logged in')
         print("\t\t"+'________________'+ "\t\t")
 
-        while default_username != username or default_pasword != pasword:
+        while default_username != new_username or default_password != new_password:
             print('Invalid credentials')
             print('Please try again')
 
