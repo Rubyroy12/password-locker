@@ -1,8 +1,10 @@
+import random
 class User:
     """
    class that creaes an instance of a class
 
     """
+    random_password = random.randint(0,9)
 
     user_list=[]
 
@@ -15,6 +17,20 @@ class User:
         """
 
         User.user_list.append(self)
+    
+    def delete_user(self):
+        """
+        method to delete_user details
+
+        """
+        User.user_list.remove(self)
+    
+    def display_user_details(self):
+        """
+        method to display user details
+        """
+
+        return User.user_list
 
      
 class Credentials:
