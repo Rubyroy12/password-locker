@@ -1,4 +1,4 @@
-from user import User
+from user import User,Credentials
 
 def main():
     """main function to process user requests."""
@@ -50,7 +50,7 @@ while True:
             else:
                 print("Login successfull")
                 print("\n")
-                print("Vew your details here:" 'http://angular.io')
+                print("Vew your details below")
                 print(f"***{username}***")
                 print(f"***{password}***")
     

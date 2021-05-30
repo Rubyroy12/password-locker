@@ -30,6 +30,10 @@ class Credentials:
     def save_user_password(self):
         """method to save the  use password"""
         Credentials.credentials_list.append(self)
+    @classmethod
+    def display_credentials(cls):
+        
+
     
 
 
