@@ -1,5 +1,19 @@
 from user import User,Credentials
 
+def create_account(self):
+    """create  new user account"""
+
+    new_account = User(username, password,confirm_password)
+
+    return new_account
+    
+def save_user(user):
+    """Save user details
+    """
+    return user.save_user()
+
+
+
 def main():
     """main function to process user requests."""
 
