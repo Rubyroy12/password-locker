@@ -1,4 +1,4 @@
-from user import User,Credentials,random
+from user import User,Credentials
 
 
 def create_account(self,new_username,password,confirm_password):
@@ -23,15 +23,17 @@ while True:
     print("___________________")
     print('\n')
 
-    print("welcome, type 'new' to create a new password locker or 'login' to login to your existing account")
+    print("welcome, type 'new' to create a new password locker or 'login' to login to your existing account or 'ex' to exit the application")
     print('\n')
-    print(f"your random password is: {random_password}")
+    # print(f"your random password is: {random_password}")
     option= input("Enter your choice: ").lower()
     
     
   
     
     if option=='new':
+        print("Enter account name")
+        account=input()
        
         print("Enter username")
         new_username = input()
@@ -71,8 +73,9 @@ while True:
                 print("Login successfull")
                 print("\n")
                 print("Vew your details below")
-                print(f"***{username}***")
-                print(f"***{password}***")
+
+                # print(f"***{username}***")
+                # print(f"***{password}***")
     
     elif option =='login':
 

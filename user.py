@@ -1,15 +1,17 @@
-import random
+# import random
 class User:
     """
    class that creaes an instance of a class
 
     """
-    random_password = random.randint(0,9)
+    # random_password = random.randint(0,9)
 
     user_list=[]
 
-    def __init__(self,username):
+    def __init__(self,account,username,password):
+        self.account = account
         self.username= username
+        self.password= password
     
     def save_user(self):
         """
