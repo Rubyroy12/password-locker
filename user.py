@@ -8,8 +8,7 @@ class User:
 
     user_list=[]
 
-    def __init__(self,account,username,password):
-        self.account = account
+    def __init__(self,username,password):
         self.username= username
         self.password= password
     
@@ -42,12 +41,21 @@ class Credentials:
     """
     credentials_list = []
 
-    def __init__(self,password):
+    def __init__(self,account,username,password):
+        self.account = account
+        self.username = username
         self.password = password
 
-    def save_user_password(self):
+    def save_user_details(self):
         """method to save the  use password"""
         Credentials.credentials_list.append(self)
+
+
+    def delete_user_credentials(self):
+        """delete user credentials"""
+
+        Credentials.credentials_list.remove(self)
+
     @classmethod
     def display_credentials(cls):
         """
