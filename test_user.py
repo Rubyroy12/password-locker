@@ -41,13 +41,22 @@ class TestUser(unittest.TestCase):
     """
     def setUp(self):
         """Setup method"""
-        self.new_user=user("username", "password")
+        self.new_user = User("username", "password")
     
     def tearDown(self):
         """Teardown method"""
 
         User.user_list=[]
-        
+
+    def test_init(self):
+        self.assertEqual(self.User.new_user.username,"Ibrahim")
+        self.assertEqual(self.User.new_user.password,"Ibra1224")
+    
+    def test_save_user(self):
+        """
+        save user
+        """
+
 
 
 
