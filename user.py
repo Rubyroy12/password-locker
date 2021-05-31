@@ -1,4 +1,5 @@
-# import random
+import random
+
 class User:
     """
    class that creaes an instance of a class
@@ -62,6 +63,13 @@ class Credentials:
         function to display user display_credentials
         """
         return cls.credentials_list
+    
+    def generate_password(self):
+        """
+        generate random password consisting of letters
+        """
+        password = string.ascii_uppercase + string.ascii_lowercase
+        return ''.join(random.choice(password) for i in range(1,9))
 
 
     

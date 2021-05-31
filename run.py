@@ -12,7 +12,34 @@ def save_user(user):
     """Save user details
     """
     return user.save_user()
+def delete_user(self):
+    """
+    method to delete_user details
 
+    """
+    User.user_list.remove(self)
+
+def create_new_credential(account,username,password):
+    """
+    function that create new credential details for a new user
+    """
+    new_credential = Credentials(account,username,password)
+    return new_credential
+
+def save_user_details(credentials):
+    """method to save the  use password"""
+    credentials.credentials_list.append()
+
+def delete_user_credentials(credentials):
+    """delete user credentials"""
+
+    credentials.credentials_list.remove()
+def generate_password(self):
+    """
+    a function that generates password randomly
+    """
+    auto_password = Credentials.generate_password(self)
+    return auto_password
 
 
 def main():
@@ -38,11 +65,15 @@ while True:
         print("Enter username")
         new_username = input()
 
+        # password = generate_password(password)
+        # print(f"You can you system genrated password {password}")
+
         print("Create password")
         new_password= input()
 
         print("Confirm password")
         confirm= input()
+
 
         while new_password!= confirm:
             print("password did not match")
@@ -51,6 +82,8 @@ while True:
 
             print("Confirm password")
             confirm= input()
+
+            save_user_details(create_account(username,password))
         
         else:
             print("You have successfully created password locker account")
