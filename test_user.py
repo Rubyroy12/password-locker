@@ -1,7 +1,8 @@
 import unittest
 from user import User
 from user import Credentials
-class Testuser(unittest.TestCase):
+class TestuserCredentials(unittest.TestCase):
+    """Test user credentials"""
     def setUp(self):
         """Set up"""
         self.new_user_credentials = Credentials("twitter","Ibrahim","Ibra1224")
@@ -30,10 +31,26 @@ class Testuser(unittest.TestCase):
         self.assertEqual(len(Credentials.credentials_list),1)
 
     def display_credentials(self):
-        """Display"""
+        """Display user credentials"""
         self.assertEqual(Credentials.display_credentials().Credentials.credentials_list)
+
+class TestUser(unittest.TestCase):
+    """
+    test class that defines the test cases for the class behaviours
+
+    """
+    def setUp(self):
+        """Setup method"""
+        self.new_user=user("username", "password")
+    
+    def tearDown(self):
+        """Teardown method"""
+
+        User.user_list=[]
+        
 
 
 
 if __name__ == "__main__":
     unittest.main()
+
