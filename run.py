@@ -100,9 +100,7 @@ while True:
 
 
 
-    else:
-        print("\n")
-        print("I DID NOT RECOGNIZED YOUR INPUT!!!")
+    elif option=="ex":
         break
  
 

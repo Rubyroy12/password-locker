@@ -61,6 +61,7 @@ class Credentials:
         """
         function to display user display_credentials
         """
+        return cls.credentials_list
 
 
     
