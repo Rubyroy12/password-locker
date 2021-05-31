@@ -49,13 +49,15 @@ class TestUser(unittest.TestCase):
         User.user_list=[]
 
     def test_init(self):
-        self.assertEqual(self.User.new_user.username,"Ibrahim")
-        self.assertEqual(self.User.new_user.password,"Ibra1224")
+        """function to initialize user"""
+        self.assertEqual(self.new_user.username,"username")
+        self.assertEqual(self.new_user.password,"password")
     
     def test_save_user(self):
         """
-        save user
+        save user 
         """
+        self.new_user.save_user()
 
 
 
