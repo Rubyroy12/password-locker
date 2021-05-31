@@ -10,7 +10,7 @@ These are the behaviours/features that the application implements for use by a u
 
 As a user I would like:
 * To create an account with my details - log in and password
-* Store my existing login credentials
+* login to account using  credentials when creating account
 * Generate a password for a new credential/account
 
 
@@ -32,8 +32,7 @@ As a user I would like:
 ## Running the Application
 * To run the application, in your terminal:
 
-        $ chmod +x password_locker.py
-        $ ./password_locker.py
+        $python3 run.py
         
 ## Testing the Application
 * To run the tests for the class file:
